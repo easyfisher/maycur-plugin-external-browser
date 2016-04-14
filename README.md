@@ -1,0 +1,1 @@
+# maycur-plugin-external-browser
