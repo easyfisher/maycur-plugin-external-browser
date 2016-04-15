@@ -1,6 +1,6 @@
 /**
-  Maycur Picker Plugin
-  https://github.com/easyfisher/maycur-plugin-picker
+  Maycur External Browser Plugin
+  https://github.com/easyfisher/maycur-plugin-external-browser
 
   Copyright (c) Easter Dong 2016
 */
@@ -12,9 +12,9 @@ var ExternalBrowser = function() {
 }
 
 ExternalBrowser.show = function(url) {
-    exec(callback,
+    exec(null,
       null,
-      "Picker",
+      "ExternalBrowser",
       "show",
       [url]
     );

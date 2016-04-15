@@ -12,7 +12,7 @@
 
     <platform name="android">
         <config-file target="config.xml" parent="/*">
-            <feature name="Browser">
+            <feature name="ExternalBrowser">
                 <param name="android-package" value="com.maycur.plugin.Browser"/>
             </feature>
         </config-file>
