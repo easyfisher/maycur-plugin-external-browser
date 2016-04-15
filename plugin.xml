@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://maycur.com/mobile/plugins/1.0"
+        id="maycur-plugin-picker" version="1.0.0">
+    <name>Picker</name>
+    <description>Maycur Picker Plugin</description>
+    <license>Maycur</license>
+    <keywords>maycur,picker</keywords>
+
+    <js-module src="www/Picker.js" name="Picker">
+            <clobbers target="maycur.picker" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Picker">
+                <param name="ios-package" value="MCPicker"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/MCPicker.h" />
+        <source-file src="src/ios/MCPicker.m" />
+        <header-file src="src/ios/MCPickerView.h" />
+        <source-file src="src/ios/MCPickerView.m" />
+    </platform>
+
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Picker">
+                <param name="android-package" value="com.maycur.plugin.Picker"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/Picker.java" target-dir="src/com/maycur/plugin" />
+        <source-file src="src/android/PickerDialog.java" target-dir="src/com/maycur/plugin" />
+        <source-file src="src/android/NumberPicker.java" target-dir="src/com/maycur/plugin" />
+        <source-file src="src/android/dialog_picker.xml" target-dir="res/layout" />
+    </platform>
+</plugin>
