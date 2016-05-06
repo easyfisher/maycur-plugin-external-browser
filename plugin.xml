@@ -10,6 +10,17 @@
             <clobbers target="maycur.externalBrowser" />
     </js-module>
 
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="ExternalBrowser">
+                <param name="ios-package" value="MCBrowser"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/MCBrowser.h" />
+        <source-file src="src/ios/MCBrowser.m" />
+    </platform>
+
     <platform name="android">
         <config-file target="config.xml" parent="/*">
             <feature name="ExternalBrowser">
