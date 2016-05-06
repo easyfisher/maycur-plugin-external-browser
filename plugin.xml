@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin xmlns="http://maycur.com/mobile/plugins/1.0"
-        id="maycur-plugin-external-browser" version="1.0.0">
+        id="maycur-plugin-external-browser" version="1.1.0">
     <name>External Browser</name>
     <description>Maycur External Browser Plugin</description>
     <license>Maycur</license>
